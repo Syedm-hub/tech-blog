@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { User } = require("../../models");
 
+//post
 router.post("/", (req, res) => {
   User.create({
     username: req.body.username,
@@ -21,6 +22,7 @@ router.post("/", (req, res) => {
     });
 });
 
+//post with login
 router.post("/login", (req, res) => {
   User.findOne({
     where: {
@@ -49,6 +51,7 @@ router.post("/login", (req, res) => {
   });
 });
 
+//log out from account
 router.post("/logout", (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
@@ -59,6 +62,7 @@ router.post("/logout", (req, res) => {
   }
 });
 
+//delete a post
 router.delete("/user/:id", (req, res) => {
   User.destroy({
     where: {

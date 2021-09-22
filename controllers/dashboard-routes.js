@@ -2,6 +2,7 @@ const router = require("express").Router();
 const { Post } = require("../models");
 const withAuth = require("../utils/auth");
 
+//get
 router.get("/", withAuth, (req, res) => {
   Post.findAll({
     where: {
@@ -22,6 +23,7 @@ router.get("/", withAuth, (req, res) => {
     });
 });
 
+//new post
 router.get("/new", withAuth, (req, res) => {
   res.render("new-post", {
     layout: "dashboard",

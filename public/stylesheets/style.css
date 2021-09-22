@@ -136,7 +136,6 @@ p {
   text-decoration: none;
 }
 
-/* CARDS */
 .card {
   margin: 0 0 20px 0;
   border: 3px solid var(--dark);
@@ -154,7 +153,6 @@ p {
   padding: 1%;
 }
 
-/* FORM */
 .form-label,
 .form-input,
 .form-textarea {
