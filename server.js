@@ -10,7 +10,7 @@ const sequelize = require("./config/connection.js");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const sess = {
-  secret: "MI6 level secret",
+  secret: "Super secret secret",
   cookie: {},
   resave: false,
   saveUninitialized: true,
