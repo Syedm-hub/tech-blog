@@ -4,6 +4,10 @@ It's a blog site deployed in heroku. User can log in/log out or create a new acc
 
 # How to USE
 
+# Live Website
+
+https://syedm-tech-blog-1212.herokuapp.com/
+
 - Go to heroku live site
 - Create a new account
 - Once you created a new account it will take you to your profile dashboard
